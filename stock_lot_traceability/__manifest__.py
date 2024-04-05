@@ -5,7 +5,7 @@
 {
     "name": "Stock Lot Traceability",
     "summary": "Drill down/up the lots produced or consumed",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "author": "Camptocamp, Odoo Community Association (OCA), Agrista",
     "maintainers": ["ivantodorovich", "drewes"],
     "website": "https://github.com/OCA/stock-logistics-workflow",

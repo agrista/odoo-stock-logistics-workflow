@@ -33,7 +33,7 @@ class StockLot(models.Model):
         """Compute the lots that were produced from this lot."""
         data = {}
         if self.ids:
-            self.env["stock.move.line"].flush(
+            self.env["stock.move.line"].flush_model(
                 ["state", "lot_id", "produce_line_ids", "consume_line_ids"]
             )
             self.env.cr.execute(
@@ -96,7 +96,7 @@ class StockLot(models.Model):
         """Compute the lots that were consumed to produce this lot."""
         data = {}
         if self.ids:
-            self.env["stock.move.line"].flush(
+            self.env["stock.move.line"].flush_model(
                 ["state", "lot_id", "produce_line_ids", "consume_line_ids"]
             )
             self.env.cr.execute(
